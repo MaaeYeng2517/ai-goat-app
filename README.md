@@ -169,10 +169,12 @@ Output (10 classes)
 ## Diagrame 
 ```mermaid
 graph TD;
-    Input_224x224x3-->Pre-trained_Base_Model_ResNet50/EfficientNetB0/MobileNetV2_;
-    A-->C;
-    B-->D;
-    C-->D;
+    Input_img-->Pre-trained_Base_Model;
+    Pre-trained_Base_Model-->Global_Average_Pooling;
+    Global_Average_Pooling-->Dense_512;
+    Dense_512-->Dropout;
+    Dropout-->Dense_10;
+    Dense_10-->Output;
 ```
 
 ## Training Options
