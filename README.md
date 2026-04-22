@@ -166,6 +166,15 @@ Dense(10) + Softmax
 Output (10 classes)
 ```
 
+## Diagrame 
+```mermaid
+graph TD;
+    Input (224x224x3)-->Pre-trained Base Model (ResNet50/EfficientNetB0/MobileNetV2);
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 ## Training Options
 
 ### Standard Training
