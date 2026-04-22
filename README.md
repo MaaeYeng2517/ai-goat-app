@@ -169,7 +169,7 @@ Output (10 classes)
 ## Diagrame 
 ```mermaid
 graph TD;
-    Input (224x224x3)-->Pre-trained Base Model (ResNet50/EfficientNetB0/MobileNetV2);
+    Input(224x224x3)-->Pre-trained_Base_Model(ResNet50/EfficientNetB0/MobileNetV2);
     A-->C;
     B-->D;
     C-->D;
